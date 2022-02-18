@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoubleScroll Demo</title>
+    <style>
+        .container {
+            width: 350px;
+            margin: 0 auto;
+            margin-bottom: 2em;
+        }
+
+        .table {
+            border-collapse: collapse;
+            border: 1px solid #999;
+        }
+
+        .table td,
+        .table th {
+            border: 1px solid #ddd;
+            white-space: nowrap;
+        }
+
+        #doublescroll {
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Without DoubleScroll</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                    <th>Column 4</th>
+                    <th>Column 5</th>
+                    <th>Column 6</th>
+                    <th>Column 7</th>
+                    <th>Column 8</th>
+                    <th>Column 9</th>
+                    <th>Column 10</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Column 1 data</td>
+                    <td>Column 2 data</td>
+                    <td>Column 3 data</td>
+                    <td>Column 4 data</td>
+                    <td>Column 5 data</td>
+                    <td>Column 6 data</td>
+                    <td>Column 7 data</td>
+                    <td>Column 8 data</td>
+                    <td>Column 9 data</td>
+                    <td>Column 10 data</td>
+                </tr>
+                <tr>
+                    <td>Column 1 data</td>
+                    <td>Column 2 data</td>
+                    <td>Column 3 data</td>
+                    <td>Column 4 data</td>
+                    <td>Column 5 data</td>
+                    <td>Column 6 data</td>
+                    <td>Column 7 data</td>
+                    <td>Column 8 data</td>
+                    <td>Column 9 data</td>
+                    <td>Column 10 data</td>
+                </tr>
+                <tr>
+                    <td>Column 1 data</td>
+                    <td>Column 2 data</td>
+                    <td>Column 3 data</td>
+                    <td>Column 4 data</td>
+                    <td>Column 5 data</td>
+                    <td>Column 6 data</td>
+                    <td>Column 7 data</td>
+                    <td>Column 8 data</td>
+                    <td>Column 9 data</td>
+                    <td>Column 10 data</td>
+                </tr>
+                <tr>
+                    <td>Column 1 data</td>
+                    <td>Column 2 data</td>
+                    <td>Column 3 data</td>
+                    <td>Column 4 data</td>
+                    <td>Column 5 data</td>
+                    <td>Column 6 data</td>
+                    <td>Column 7 data</td>
+                    <td>Column 8 data</td>
+                    <td>Column 9 data</td>
+                    <td>Column 10 data</td>
+                </tr>
+                <tr>
+                    <td>Column 1 data</td>
+                    <td>Column 2 data</td>
+                    <td>Column 3 data</td>
+                    <td>Column 4 data</td>
+                    <td>Column 5 data</td>
+                    <td>Column 6 data</td>
+                    <td>Column 7 data</td>
+                    <td>Column 8 data</td>
+                    <td>Column 9 data</td>
+                    <td>Column 10 data</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>With DoubleScroll</h2>
+        <div id="doublescroll">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                        <th>Column 4</th>
+                        <th>Column 5</th>
+                        <th>Column 6</th>
+                        <th>Column 7</th>
+                        <th>Column 8</th>
+                        <th>Column 9</th>
+                        <th>Column 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Column 1 data</td>
+                        <td>Column 2 data</td>
+                        <td>Column 3 data</td>
+                        <td>Column 4 data</td>
+                        <td>Column 5 data</td>
+                        <td>Column 6 data</td>
+                        <td>Column 7 data</td>
+                        <td>Column 8 data</td>
+                        <td>Column 9 data</td>
+                        <td>Column 10 data</td>
+                    </tr>
+                    <tr>
+                        <td>Column 1 data</td>
+                        <td>Column 2 data</td>
+                        <td>Column 3 data</td>
+                        <td>Column 4 data</td>
+                        <td>Column 5 data</td>
+                        <td>Column 6 data</td>
+                        <td>Column 7 data</td>
+                        <td>Column 8 data</td>
+                        <td>Column 9 data</td>
+                        <td>Column 10 data</td>
+                    </tr>
+                    <tr>
+                        <td>Column 1 data</td>
+                        <td>Column 2 data</td>
+                        <td>Column 3 data</td>
+                        <td>Column 4 data</td>
+                        <td>Column 5 data</td>
+                        <td>Column 6 data</td>
+                        <td>Column 7 data</td>
+                        <td>Column 8 data</td>
+                        <td>Column 9 data</td>
+                        <td>Column 10 data</td>
+                    </tr>
+                    <tr>
+                        <td>Column 1 data</td>
+                        <td>Column 2 data</td>
+                        <td>Column 3 data</td>
+                        <td>Column 4 data</td>
+                        <td>Column 5 data</td>
+                        <td>Column 6 data</td>
+                        <td>Column 7 data</td>
+                        <td>Column 8 data</td>
+                        <td>Column 9 data</td>
+                        <td>Column 10 data</td>
+                    </tr>
+                    <tr>
+                        <td>Column 1 data</td>
+                        <td>Column 2 data</td>
+                        <td>Column 3 data</td>
+                        <td>Column 4 data</td>
+                        <td>Column 5 data</td>
+                        <td>Column 6 data</td>
+                        <td>Column 7 data</td>
+                        <td>Column 8 data</td>
+                        <td>Column 9 data</td>
+                        <td>Column 10 data</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="DoubleScroll.js"></script>
+    <script>
+        DoubleScroll(document.getElementById('doublescroll'));
+    </script>
+</body>
+</html>
