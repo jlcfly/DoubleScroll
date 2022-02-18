@@ -1,5 +1,5 @@
 # DoubleScroll
-Plain ol' Javascript that places a horizontal scroll bar to top of horizontally-scrollable element
+Plain ol' Javascript that places a horizontal scroll bar at the top of a horizontally-scrollable element.
 
 Add DoubleScroll.js via a script tag. Then, in your HTML, wrap the element you want to horizontally scroll with a div tag:
 
