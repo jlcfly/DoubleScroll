@@ -44,23 +44,25 @@ function DoubleScroll(element) {
 	element.appendChild(scroll1);
 	element.appendChild(scroll2);
 
-	let running = false;
+	let isRunning = false;
 
 	scroll1.onscroll = function() {
-		if(running) {
-			running = false;
+		if (isRunning) {
+			isRunning = false;
 			return;
 		}
-		running = true;
+
+		isRunning = true;
 		scroll2.scrollLeft = scroll1.scrollLeft;
 	};
 
 	scroll2.onscroll = function() {
-		if(running) {
-			running = false;
+		if (isRunning) {
+			isRunning = false;
 			return;
 		}
-		running = true;
+		
+		isRunning = true;
 		scroll1.scrollLeft = scroll2.scrollLeft;
 	};
 }
