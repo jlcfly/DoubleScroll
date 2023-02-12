@@ -13,7 +13,7 @@ Then in your javascript:
 
 	DoubleScroll(document.getElementById('doublescroll'));
 
-You do not have id your outer div 'doublescroll'. Name it whatever you want. Just reference it appropriately in the javascript call.
+You do not have to id your outer div 'doublescroll'. Name it whatever you want. Just reference it appropriately in the javascript call.
 
 It's not required to style the _#doublescroll_ element, but it might be advisable to do so in certain circumstances. For example, adding a border:
 
